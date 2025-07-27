@@ -1,0 +1,308 @@
+.seat-selection {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.bus-info {
+  background: #dbeafe;
+  color: #2563eb;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.seat-container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.seat-layout-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.bus-layout {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.bus-header-section {
+  background: #f1f5f9;
+  padding: 1rem;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 1rem;
+}
+
+.driver-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.steering {
+  font-size: 1.5rem;
+}
+
+.seats-grid {
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 0 0 20px 20px;
+  padding: 1rem;
+}
+
+.seat-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.row-number {
+  width: 30px;
+  font-size: 0.8rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.row-seats {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.seat-pair {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.aisle {
+  width: 20px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seat-available {
+  background: #f0f9f0;
+  border-color: #22c55e;
+  color: #15803d;
+}
+
+.seat-available:hover {
+  background: #22c55e;
+  color: white;
+  transform: scale(1.05);
+}
+
+.seat-selected {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: white;
+  transform: scale(1.05);
+}
+
+.seat-booked {
+  background: #fee2e2;
+  border-color: #ef4444;
+  color: #dc2626;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.seat-legend {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.seat-legend h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.legend-item .seat {
+  width: 24px;
+  height: 24px;
+  font-size: 0.6rem;
+}
+
+.booking-summary {
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.summary-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.trip-details {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.detail-row span:first-child {
+  color: #6b7280;
+}
+
+.detail-row span:last-child {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.selected-seats {
+  margin-bottom: 2rem;
+}
+
+.selected-seats h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.no-seats {
+  color: #6b7280;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.seats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.selected-seat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+.seat-name {
+  font-weight: 500;
+  color: #2563eb;
+}
+
+.seat-price {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.pricing {
+  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.price-row.total {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e2e8f0;
+  color: #1f2937;
+}
+
+.continue-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 968px) {
+  .seat-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .booking-summary {
+    position: static;
+    order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .seat-layout-section {
+    padding: 1rem;
+  }
+  
+  .seat {
+    width: 35px;
+    height: 35px;
+    font-size: 0.6rem;
+  }
+  
+  .legend-items {
+    justify-content: center;
+  }
+  
+  .summary-card {
+    padding: 1.5rem;
+  }
+}
