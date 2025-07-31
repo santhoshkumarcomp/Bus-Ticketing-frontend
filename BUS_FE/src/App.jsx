@@ -49,7 +49,8 @@ function App() {
   };
 
   const handleRegister = async (userData) => {
-    if (userType === "operator") {
+    if (userType == "operator") {
+      console.log("Registering operator:", userData);
       const response = await axios.post(
         `https://bus-ticketing-backend.onrender.com/auth/busOperator/register`,
         {
